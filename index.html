@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- font awsome -->
+  <script src="https://kit.fontawesome.com/52fb6b69b1.js" crossorigin="anonymous"></script>
+
+  <title>Book Library</title>
+  <style>
+    thead tr {
+      font-weight: bold;
+    }
+
+    .fa-times-circle {
+      color: tomato;
+    }
+
+    tr td:last-child {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h4 class="text-center">Book List</h4>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" placeholder="Enter Title..." class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author" placeholder="Enter Author..." class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="isbn">ISBN</label>
+        <input type="number" name="isbn" id="isbn" placeholder="Enter ISBN..." class="form-control">
+      </div>
+      <input type="submit" value="Add Book" class="btn btn-dark btn-block">
+    </form>
+    <br>
+    <div class="form-group">
+      <label for="filter">Filter</label>
+      <input type="text" name="filter" id="filter" class="form-control">
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <td>Title</td>
+          <td>Author</td>
+          <td>ISBN</td>
+          <td>Delete</td>
+        </tr>
+      </thead>
+      <tbody id="book-list">
+        <!-- <tr>
+          <td>How to Act Good</td>
+          <td>Sameh Soliman</td>
+          <td>123456</td>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+        </tr> -->
+      </tbody>
+    </table>
+    <br>
+    <input type="button" id="clear-btn" value="Clear Book List" class="btn btn-dark btn-block">
+  </div>
+  
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="appes6.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--   <div class="container">
+    <h4 class="text-center">Book List</h4>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" placeholder="Enter Title" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author" placeholder="Enter Author" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="isbn">ISBN</label>
+        <input type="text" name="isbn" id="isbn" placeholder="Enter ISBN" class="form-control">
+      </div>
+      <input type="submit" value="Add Book" class="btn btn-dark btn-block">
+    </form>
+    <br>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <td>Title</td>
+          <td>Author</td>
+          <td>ISBN</td>
+          <td>Delete</td>
+        </tr>
+      </thead>
+      <tbody id="book-list">
+         <tr>
+          <td>How to act good</td>
+          <td>Sameh</td>
+          <td>123456</td>
+          <td></td>
+        </tr> 
+      </tbody>
+    </table>
+  </div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h4 class="text-center">Book List</h4>
+      <form>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" placeholder="Title" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" placeholder="Author" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="isbn">ISBN</label>
+          <input type="text" name="isbn" id="isbn" placeholder="ISBN" class="form-control">
+        </div>
+        <input type="submit" value="Add Book" class="btn btn-dark btn-block">
+      </form>
+      <br>
+      <table class="table table-striped">
+        <tr class="text-center">
+          <td>Title</td>
+          <td>Author</td>
+          <td>ISBN</td>
+        </tr>
+        <tr>
+          <td>Work</td>
+          <td>Sameh</td>
+          <td>12345</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <style>
+    .success, .error {
+      color: white;
+      padding: 5px;
+      margin: 5px 0 15px 0;
+    }
+
+    .success {
+      background: green;
+    }
+
+    .error {
+      background: red;
+    }
+  </style>
+  <title>Book List</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Add Book</h1>
+    <form id="book-form">
+      <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" class="u-full-width">
+      </div>
+      <div>
+        <label for="author">Author</label>
+        <input type="text" id="author" class="u-full-width">
+      </div>
+      <div>
+        <label for="isbn">ISBN#</label>
+        <input type="text" id="isbn" class="u-full-width">
+      </div>
+      <div>
+        <input type="submit" value="Submit" class="u-full-width">
+      </div>
+    </form>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list"></tbody>
+    </table>
+  </div>
+
+  <script src="appes6.js"></script>
+</body>
+</html> -->
